@@ -1,0 +1,15 @@
+:root{
+    --nav-hover-color: #422e32;
+    --nav-bg-color: #050105;
+    --main-hd-color: #12020b;
+    --main-hd-title-bg-color: #21070d;
+    
+    --proj-highlight-red: #200008;
+    --proj-highlight-textSize: 1.5rem;
+
+    --projDetails-titleText-size: 2.1rem;
+    --projDetails-smallerText-size: 1.1rem;
+    --projDetails-smallerText-color: #e2dcdc;
+
+    --footer-bg-color :#0f0607;
+}

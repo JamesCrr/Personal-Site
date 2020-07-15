@@ -39,8 +39,8 @@ body{
 /* Content Related Elements */
 .page-content{
     min-height: 100vh;
-    /* background: var(--nav-bg-color); */
-    background-image: linear-gradient(90deg, var(--nav-bg-color), var(--main-hd-color), var(--nav-bg-color));
+    background: var(--nav-bg-color);
+    /* background-image: linear-gradient(90deg, var(--nav-bg-color), var(--main-hd-color), var(--nav-bg-color)); */
 }
 
 .proj-showcase{    
@@ -56,9 +56,16 @@ body{
     height: 0;
 }
 .proj-card{
-    width: 20rem;
+    width: 22rem;
     opacity: 0;
     transition: opacity 250ms ease-in;
+
+    /*padding: 10px;
+    border-radius: 10px 10px 10px 10px;
+    border-style: solid;
+    border-width: 5px;
+    border-color: var(--main-hd-title-bg-color); */
+    /* background: var(--main-hd-color); */
 }
 .proj-card.appear{
     opacity: 1;
@@ -84,17 +91,33 @@ body{
 
     transition: color 0.5s ease;
 }
+.proj-name a p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.proj-tag-container{
+    margin-top: 4%; 
+}
+.proj-tag{
+    display: inline;
+    color: white;
+    padding: 2%;
+    margin-right: 2%;
+    border-radius: 10px;
+    background: var(--main-hd-title-bg-color);
+}
 /***************************************/
 
 
 /* Media Queries */
 @media screen and (max-width: 1140px){
     .proj-showcase{
-        grid-template-columns: repeat(2, 20rem);
+        grid-template-columns: repeat(2, auto);
         grid-column-gap: 8rem;
     }
 }
-@media screen and (max-width: 795px){
+@media screen and (max-width: 950px){
     .page-title{
         height: 35vh;
     }
@@ -110,6 +133,7 @@ body{
         padding-top: 10%;
         grid-template-columns: repeat(1, 20rem);
         grid-column-gap: 0rem;
+        grid-row-gap: 5rem;
     }
 }
 @media screen and (max-width: 415px){
@@ -153,7 +177,10 @@ body{
         height: 6rem;
     }
     .proj-name{
-       font-size: 0.8rem;
+       font-size: 1.1rem;
+    }
+    .proj-tag{
+        font-size: 0.9rem;
     }
 }
 @media screen and (max-width: 170px){
@@ -177,7 +204,10 @@ body{
         height: 4rem;
     }
     .proj-name{
-       font-size: 0.7rem;
+       font-size: 0.9rem;
+    }
+    .proj-tag{
+        font-size: 0.7rem;
     }
 }
 /***************************************/

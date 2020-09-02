@@ -18,25 +18,25 @@ body{
 }
 .title-name{
     font-size: 200px;
-    color: white;
+    color: var(--general-text-color);
     line-height: 180px;
 }
 .title-after{
     font-size: 20px;
     font-weight: 70;
-    color: white;
+    color: var(--general-text-color);
     
     animation: fadeIn_FromTop 1.5s ease;
 }
 .title-highlight{
-    background-color: var(--main-hd-title-bg-color);
+    background-color: var(--projDetails-button-color);
 }
 .title-buttons-title{
     padding-top: 9vh;
     text-align: center;
     font-size: 22px;
     font-weight: 700;
-    color: white;
+    color: var(--general-text-color);
 
 }
 .title-buttons{
@@ -51,10 +51,10 @@ body{
     margin: 0% 7%;
     font-weight: 70;
     font-size: 20px;
-    color: white;
+    color: var(--general-text-color);
     padding: 1%;
     border-radius: 100px;
-    border: var(--main-hd-title-bg-color) 5px solid;
+    border: var(--projDetails-button-color) 5px solid;
     transition: background 0.3s ease;
 
     opacity: 0;
@@ -62,7 +62,7 @@ body{
     animation-delay: 1s;
 }
 .title-button:hover, .title-button:active{
-    background: var(--main-hd-title-bg-color);
+    background: var(--projDetails-button-color);
     cursor: pointer;
 }
 /***************************************/

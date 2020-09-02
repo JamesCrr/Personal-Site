@@ -18,10 +18,10 @@ body{
 }
 .title-name{
     font-size: 30px;
-    color: white;
+    color: var(--general-text-color);
 }
 .title-highlight{
-    background-color: var(--main-hd-title-bg-color);
+    background-color: var(--projDetails-button-color);
 }
 .contact-images{
     padding-top: 20vh;
@@ -31,11 +31,11 @@ body{
 }
 .contact-img{
     transform: scale(5,5);
-    fill: white;
+    fill: var(--general-text-color);
     transition: fill 0.2s ease;
 }
 .contact-img:hover, .contact-img:active{
-    fill: var(--main-hd-title-bg-color);
+    fill: var(--projDetails-button-color);
 }
 
 /***************************************/

@@ -19,7 +19,7 @@ body{
     justify-content: space-evenly;
 }
 .footer-img{
-    fill: white;
+    fill: var(--general-text-color);
     transition: fill 0.2s ease;
 }
 .footer-img:hover, .footer-img:active{

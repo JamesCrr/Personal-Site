@@ -10,8 +10,8 @@ body{
 /* Header Related Elements */
 .page-title{
     height: 45vh;
-    /* background: var(--main-hd-color); */
-    background-image: linear-gradient(90deg, var(--nav-bg-color), var(--main-hd-color), var(--nav-bg-color));
+    /* background: var(--nav-border-color); */
+    background-image: linear-gradient(90deg, var(--nav-bg-color), var(--nav-border-color), var(--nav-bg-color));
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +19,7 @@ body{
 .title-bg{
     height: 55%;
     width: 50%;
-    background: var(--main-hd-title-bg-color);
+    background: var(--projDetails-button-color);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -31,7 +31,7 @@ body{
 }
 .title-name{
     font-size: 3rem;
-    color: white;
+    color: var(--general-text-color);
 }
 /***************************************/
 
@@ -40,7 +40,7 @@ body{
 .page-content{
     min-height: 100vh;
     background: var(--nav-bg-color);
-    /* background-image: linear-gradient(90deg, var(--nav-bg-color), var(--main-hd-color), var(--nav-bg-color)); */
+    /* background-image: linear-gradient(90deg, var(--nav-bg-color), var(--nav-border-color), var(--nav-bg-color)); */
 }
 
 .proj-showcase{    
@@ -59,13 +59,11 @@ body{
     width: 22rem;
     opacity: 0;
     transition: opacity 250ms ease-in;
-
     /*padding: 10px;
     border-radius: 10px 10px 10px 10px;
     border-style: solid;
     border-width: 5px;
-    border-color: var(--main-hd-title-bg-color); */
-    /* background: var(--main-hd-color); */
+    border-color: var(--projDetails-button-color); */
 }
 .proj-card.appear{
     opacity: 1;
@@ -73,21 +71,28 @@ body{
 .proj-img-container{
     overflow: hidden;
     border-radius: 10px 10px 0px 0px;
+    height: 16rem;
+}
+.proj-img-container a{
+    height: inherit;
 }
 .proj-img{
     max-width: 100%;
     width: 100%;
-    height: 16rem;
-
+    height: inherit;
+    
     transition: transform 0.9s ease;
 }
+.proj-details-container{
+    background: linear-gradient(180deg, var(--proj-cardBg-color), var(--nav-bg-color));
+}
 .proj-name{
-    margin-top:5%;
+    margin-left: 1%;
     font-size: 1.5rem;
 }
 .proj-name a{
     text-decoration: none;
-    color: white;
+    color: var(--general-text-color);
 
     transition: color 0.5s ease;
 }
@@ -97,15 +102,25 @@ body{
     text-overflow: ellipsis;
 }
 .proj-tag-container{
-    margin-top: 4%; 
+    margin-top: 2%; 
 }
 .proj-tag{
     display: inline;
-    color: white;
-    padding: 2%;
+    color: var(--general-text-color);
+    padding: 1.5%;
     margin-right: 2%;
     border-radius: 10px;
-    background: var(--main-hd-title-bg-color);
+    font-size: 0.9rem;
+    background: var(--projDetails-button-color);
+}
+.proj-synopsis-container{
+    margin-top: 6%;
+}
+.proj-synopsis{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: var(--general-text-color);
 }
 /***************************************/
 
@@ -126,14 +141,13 @@ body{
     }
     .title-name{
         font-size: 2rem;
-        color: white;
     }
 
     .proj-showcase{
-        padding-top: 10%;
-        grid-template-columns: repeat(1, 20rem);
-        grid-column-gap: 0rem;
-        grid-row-gap: 5rem;
+        padding-top: 20%;
+        grid-template-columns: repeat(1, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 80px;
     }
 }
 @media screen and (max-width: 415px){
@@ -146,13 +160,13 @@ body{
     }
 
     .proj-showcase{
-        grid-template-columns: repeat(1, 15rem);
+        grid-template-columns: repeat(1, auto);
         grid-row-gap: 40px;
     }
     .proj-card{
         width: 15rem;
     }
-    .proj-img{
+    .proj-img-container{
         height: 11rem;
     }
 }
@@ -163,7 +177,6 @@ body{
     }
     .title-name{
         font-size: 1.5rem;
-        color: white;
     }
 
     .proj-showcase{
@@ -173,14 +186,17 @@ body{
     .proj-card{
         width: 10rem;
     }
-    .proj-img{
+    .proj-img-container{
         height: 6rem;
     }
     .proj-name{
        font-size: 1.1rem;
     }
     .proj-tag{
-        font-size: 0.9rem;
+        font-size: 0.75rem;
+    }
+    .proj-synopsis{
+        font-size: 0.8rem;
     }
 }
 @media screen and (max-width: 170px){
@@ -190,23 +206,26 @@ body{
     }
     .title-name{
         font-size: 1.3rem;
-        color: white;
     }
 
     .proj-showcase{
+        padding-top: 30%;
         grid-template-columns: repeat(1, 7rem);
         grid-row-gap: 20px;
     }
     .proj-card{
         width: 7rem;
     }
-    .proj-img{
+    .proj-img-container{
         height: 4rem;
     }
     .proj-name{
        font-size: 0.9rem;
     }
     .proj-tag{
+        font-size: 0.65rem;
+    }
+    .proj-synopsis{
         font-size: 0.7rem;
     }
 }

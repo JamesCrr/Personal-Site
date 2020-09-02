@@ -22,7 +22,7 @@ body{
 .hamburger-lines{
     width: 30px;
     height: 3px;
-    background: white;
+    background: var(--general-text-color);
     margin: 5px;
 }
 .nav-links{
@@ -34,7 +34,7 @@ body{
     height: 10vh;
 }
 .nav-link{
-    color: white;
+    color: var(--general-text-color);
     font-size: 1.7rem;
     font-weight: 700;
     text-decoration: none;
@@ -64,6 +64,7 @@ body{
         position: fixed;
         /* top: 8vh; */
         top: 45px;
+        z-index: 2;
 
         width: 100%;
         height: 0vh;
@@ -73,19 +74,18 @@ body{
     .nav-links li{
         width: 100%;
         border-style: solid;
-        border-color: var(--main-hd-color);
-        border-width: 0px 2px 4px 1px;
+        border-color: var(--nav-border-color);
+        border-width: 0px 0px 4px 0px;
     }
     .nav-links.open li{
         width: 100%;
         border-style: solid;
-        border-color: var(--main-hd-color);
-        border-width: 0px 2px 4px 1px;
+        border-color: var(--nav-border-color);
+        border-width: 0px 0px 4px 0px;
     }
     .nav-links.open{
         display: flex;
         width: 100%;
-        z-index: 2;
 
         /* height: 15vh; */
         height: 113px;
@@ -115,6 +115,7 @@ body{
         top: 6vh
     }
 
+    .nav-link,
     .nav-link.open{
         font-size: 1.2rem;
     }

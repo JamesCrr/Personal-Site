@@ -84,7 +84,7 @@ body{
     transition: transform 0.9s ease;
 }
 .proj-details-container{
-    background: linear-gradient(180deg, var(--proj-cardBg-color), var(--nav-bg-color));
+    background: linear-gradient(-10deg, var(--proj-cardBg-color), var(--nav-bg-color));
 }
 .proj-name{
     margin-left: 1%;
@@ -126,7 +126,7 @@ body{
 
 
 /* Media Queries */
-@media screen and (max-width: 1140px){
+@media screen and (max-width: 1300px){
     .proj-showcase{
         grid-template-columns: repeat(2, auto);
         grid-column-gap: 8rem;

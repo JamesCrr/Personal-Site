@@ -3,7 +3,7 @@ $(document).ready(function(){
   // Fade in Project Cards
   const projectCards = document.querySelectorAll(".proj-card");
   const appearOptions = {
-      threshold: 0.8    // Only fade once 80% visible
+      threshold: 0.6    // Only fade once 60% visible
    };
   const appearOnScroll = new IntersectionObserver
   (function(entries, appearOnScroll) {

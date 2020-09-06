@@ -84,6 +84,7 @@ body{
     transition: transform 0.9s ease;
 }
 .proj-details-container{
+    padding: 2% 0%;
     background: linear-gradient(-10deg, var(--proj-cardBg-color), var(--nav-bg-color));
 }
 .proj-name{

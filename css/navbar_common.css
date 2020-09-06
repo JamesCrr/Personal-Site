@@ -22,7 +22,7 @@ body{
 .hamburger-lines{
     width: 30px;
     height: 3px;
-    background: var(--general-text-color);
+    background: var(--white-text-color);
     margin: 5px;
 }
 .nav-links{
@@ -34,7 +34,7 @@ body{
     height: 10vh;
 }
 .nav-link{
-    color: var(--general-text-color);
+    color: var(--white-text-color);
     font-size: 1.7rem;
     font-weight: 700;
     text-decoration: none;

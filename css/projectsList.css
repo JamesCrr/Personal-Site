@@ -45,9 +45,8 @@ body{
 
 .proj-showcase{    
     display: grid;
-    grid-template-columns: repeat(3, 20rem);
-    grid-column-gap: 5rem;
-    grid-row-gap: 4rem;
+    grid-template-columns: repeat(1, auto);
+    grid-row-gap: 40px;
     justify-content: center;
     padding: 5% 0%;
 }
@@ -56,9 +55,12 @@ body{
     height: 0;
 }
 .proj-card{
-    width: 22rem;
+    width: 80vw;
+    border-radius: 10px;
+    padding: 0% 10px;
     opacity: 0;
     transition: opacity 250ms ease-in;
+    background: linear-gradient(170deg, var(--proj-cardBg-color), var(--nav-bg-color));
     /*padding: 10px;
     border-radius: 10px 10px 10px 10px;
     border-style: solid;
@@ -68,27 +70,18 @@ body{
 .proj-card.appear{
     opacity: 1;
 }
-.proj-img-container{
-    overflow: hidden;
-    border-radius: 10px 10px 0px 0px;
-    height: 16rem;
+.proj-nameAndTag-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2%;
 }
-.proj-img-container a{
-    height: inherit;
-}
-.proj-img{
-    max-width: 100%;
-    width: 100%;
-    height: inherit;
-    
-    transition: transform 0.9s ease;
-}
-.proj-details-container{
-    background: linear-gradient(-10deg, var(--proj-cardBg-color), var(--nav-bg-color));
+.proj-name-container{
+    min-width: 50%;
+    display: inline-block;
+    vertical-align: middle;
 }
 .proj-name{
-    margin-left: 1%;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .proj-name a{
     text-decoration: none;
@@ -102,36 +95,32 @@ body{
     text-overflow: ellipsis;
 }
 .proj-tag-container{
-    margin-top: 2%; 
+    min-width: 45%;
+    text-align: end;
+    vertical-align: middle;
 }
 .proj-tag{
-    display: inline;
+    display: inline-block;
     color: var(--white-text-color);
-    padding: 1.5%;
-    margin-right: 2%;
+    padding: 1%;
     border-radius: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     background: var(--projDetails-button-color);
 }
 .proj-synopsis-container{
-    margin-top: 6%;
+    margin: 2% 0%;
 }
 .proj-synopsis{
-    white-space: nowrap;
+    /* white-space: nowrap;
     overflow: hidden;
-    text-overflow: ellipsis;
+    text-overflow: ellipsis; */
+    font-size: 1rem;
     color: var(--darker-text-color);
 }
 /***************************************/
 
 
 /* Media Queries */
-@media screen and (max-width: 1300px){
-    .proj-showcase{
-        grid-template-columns: repeat(2, auto);
-        grid-column-gap: 8rem;
-    }
-}
 @media screen and (max-width: 950px){
     .page-title{
         height: 35vh;
@@ -142,12 +131,27 @@ body{
     .title-name{
         font-size: 2rem;
     }
-
-    .proj-showcase{
-        padding-top: 20%;
-        grid-template-columns: repeat(1, auto);
-        grid-column-gap: 0px;
-        grid-row-gap: 80px;
+}
+@media screen and (max-width: 700px){
+    .proj-name{
+        font-size: 1.7rem;
+    }
+    .proj-tag{
+        font-size: 0.9rem;
+    }
+    .proj-synopsis{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 600px){
+    .proj-name{
+        font-size: 1.5rem;
+    }
+    .proj-tag{
+        font-size: 0.75rem;
+    }
+    .proj-synopsis{
+        font-size: 0.8rem;
     }
 }
 @media screen and (max-width: 415px){
@@ -160,13 +164,16 @@ body{
     }
 
     .proj-showcase{
-        grid-row-gap: 40px;
+        padding-top: 20%;
     }
-    .proj-card{
-        width: 15rem;
+    .proj-name{
+        font-size: 1.1rem;
     }
-    .proj-img-container{
-        height: 11rem;
+    .proj-tag{
+        font-size: 0.65rem;
+    }
+    .proj-synopsis{
+        font-size: 0.7rem;
     }
 }
 @media screen and (max-width: 250px){
@@ -179,22 +186,17 @@ body{
     }
 
     .proj-showcase{
+        padding-top: 30%;
         grid-row-gap: 30px;
     }
-    .proj-card{
-        width: 10rem;
-    }
-    .proj-img-container{
-        height: 6rem;
-    }
     .proj-name{
-       font-size: 1.1rem;
+       font-size: 0.9rem;
     }
     .proj-tag{
-        font-size: 0.75rem;
+        font-size: 0.55rem;
     }
     .proj-synopsis{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 }
 @media screen and (max-width: 170px){
@@ -207,23 +209,17 @@ body{
     }
 
     .proj-showcase{
-        padding-top: 30%;
+        padding-top: 40%;
         grid-row-gap: 20px;
     }
-    .proj-card{
-        width: 7rem;
-    }
-    .proj-img-container{
-        height: 4rem;
-    }
     .proj-name{
-       font-size: 0.9rem;
+       font-size: 0.7rem;
     }
     .proj-tag{
-        font-size: 0.65rem;
+        font-size: 0.5rem;
     }
     .proj-synopsis{
-        font-size: 0.7rem;
+        font-size: 0.55rem;
     }
 }
 /***************************************/

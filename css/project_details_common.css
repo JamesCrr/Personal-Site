@@ -30,7 +30,7 @@ body{
 }
 .title-name{
     font-size: 3rem;
-    color: var(--general-text-color);
+    color: var(--white-text-color);
     text-align: center;
 }
 /***************************************/
@@ -114,7 +114,7 @@ body{
 .proj-about h2,
 .proj-respon h2,
 .proj-misc h2{
-    color: var(--general-text-color);
+    color: var(--white-text-color);
     font-size: var(--projDetails-titleText-size);
     padding-bottom: 0.5%;
     position: relative;
@@ -136,7 +136,7 @@ body{
 }
 .svg-links-vid{
     margin-right: 30px;
-    fill: var(--general-text-color);
+    fill: var(--white-text-color);
     transition: fill 0.2s ease;
 }
 .svg-links-vid:hover, .svg-links-vid:active{
@@ -152,7 +152,7 @@ body{
 .back-top-button{
     text-decoration: none;
     font-size: 1.5rem;
-    color: var(--general-text-color);
+    color: var(--white-text-color);
     padding: 15px;
     border-radius: 100px;
     border: var(--projDetails-button-color) 5px solid;

@@ -25,22 +25,57 @@ $(document).ready(function(){
 
   // On Hover Project Cards
   // Hover Project Image
-  $(".proj-card").on("mouseover", function(){
+  // $(".proj-card").on("mouseover", function(){
+  //   $(this).css({"cursor":"pointer"});
+  //   $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.2)"});
+  //   $(this).children(".proj-details-container").children(".proj-name").children("a").css({"color":"var(--nav-hover-color)"});
+  // }).on("mouseout", function(){
+  //   $(this).css({"cursor":"default"});
+  //   $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.0)"});
+  //   $(this).children(".proj-details-container").children(".proj-name").children("a").css({"color":"var(--white-text-color)"});
+  // }).on("touchstart", function(){
+  //   $(this).css({"cursor":"pointer"});
+  //   $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.2)"});
+  //   $(this).children(".proj-details-container").children(".proj-name").children("a").css({"color":"var(--nav-hover-color)"});
+  // }).on("touchend", function(){
+  //   $(this).css({"cursor":"default"});
+  //   $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.0)"});
+  //   $(this).children(".proj-details-container").children(".proj-name").children("a").css({"color":"var(--white-text-color)"});
+  // });;
+
+  $(".proj-img-container").on("mouseover", function(){
     $(this).css({"cursor":"pointer"});
-    $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.2)"});
-    $(this).children(".proj-name").children("a").css({"color":"var(--nav-hover-color)"});
+    $(this).children("a").children(".proj-img").css({"transform":"scale(1.2)"});
+    $(this).next().children(".proj-name").children("a").css({"color":"var(--nav-hover-color)"});
   }).on("mouseout", function(){
     $(this).css({"cursor":"default"});
-    $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.0)"});
-    $(this).children(".proj-name").children("a").css({"color":"white"});
+    $(this).children("a").children(".proj-img").css({"transform":"scale(1.0)"});
+    $(this).next().children(".proj-name").children("a").css({"color":"var(--white-text-color)"});
   }).on("touchstart", function(){
     $(this).css({"cursor":"pointer"});
-    $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.2)"});
-    $(this).children(".proj-name").children("a").css({"color":"var(--nav-hover-color)"});
+    $(this).children("a").children(".proj-img").css({"transform":"scale(1.2)"});
+    $(this).next().children(".proj-name").children("a").css({"color":"var(--nav-hover-color)"});
   }).on("touchend", function(){
     $(this).css({"cursor":"default"});
-    $(this).children(".proj-img-container").children("a").children(".proj-img").css({"transform":"scale(1.0)"});
-    $(this).children(".proj-name").children("a").css({"color":"white"});
+    $(this).children("a").children(".proj-img").css({"transform":"scale(1.0)"});
+    $(this).next().children(".proj-name").children("a").css({"color":"var(--white-text-color)"});
+  });;
+  $(".proj-name").on("mouseover", function(){
+    $(this).css({"cursor":"pointer"});
+    $(this).parent().prev().children("a").children(".proj-img").css({"transform":"scale(1.2)"});
+    $(this).children("a").css({"color":"var(--nav-hover-color)"});
+  }).on("mouseout", function(){
+    $(this).css({"cursor":"default"});
+    $(this).parent().prev().children("a").children(".proj-img").css({"transform":"scale(1.0)"});
+    $(this).children("a").css({"color":"var(--white-text-color)"});
+  }).on("touchstart", function(){
+    $(this).css({"cursor":"pointer"});
+    $(this).parent().prev().children("a").children(".proj-img").css({"transform":"scale(1.2)"});
+    $(this).children("a").css({"color":"var(--nav-hover-color)"});
+  }).on("touchend", function(){
+    $(this).css({"cursor":"default"});
+    $(this).parent().prev().children("a").children(".proj-img").css({"transform":"scale(1.0)"});
+    $(this).children("a").css({"color":"var(--white-text-color)"});
   });;
   
 });

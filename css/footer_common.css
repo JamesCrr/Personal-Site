@@ -8,7 +8,7 @@ body{
 }
 
 .page-footer{
-    background: var(--footer-bg-color);
+    background: var(--projDetails-button-color);
     /* background: linear-gradient(180deg, var(--nav-bg-color), var(--footer-bg-color)); */
     padding: 2% 6%;
 }
@@ -19,7 +19,7 @@ body{
     justify-content: space-evenly;
 }
 .footer-img{
-    fill: var(--general-text-color);
+    fill: var(--white-text-color);
     transition: fill 0.2s ease;
 }
 .footer-img:hover, .footer-img:active{

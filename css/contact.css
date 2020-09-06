@@ -18,7 +18,7 @@ body{
 }
 .title-name{
     font-size: 30px;
-    color: var(--general-text-color);
+    color: var(--white-text-color);
 }
 .title-highlight{
     background-color: var(--projDetails-button-color);
@@ -31,7 +31,7 @@ body{
 }
 .contact-img{
     transform: scale(5,5);
-    fill: var(--general-text-color);
+    fill: var(--white-text-color);
     transition: fill 0.2s ease;
 }
 .contact-img:hover, .contact-img:active{

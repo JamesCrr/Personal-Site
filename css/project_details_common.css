@@ -124,11 +124,14 @@ body{
     width: 0%;
     border-radius: 100px;
     background: var(--projDetails-button-color);
-    transition: width 0.8s ease-out;
+    transition: width 0.8s ease-out,
+                background 0.8s ease-out;
 }
 .underLine.appear{
     width: 110%;
+    background: var(--projDetails-titleUnderline-color);
 }
+/* Video Icon */
 .svg-links{
     margin-top: 2%;
     display: flex;
@@ -152,14 +155,16 @@ body{
 .back-top-button{
     text-decoration: none;
     font-size: 1.5rem;
-    color: var(--white-text-color);
-    padding: 15px;
+    color: var(--darker-text-color);
+    padding: 9px;
     border-radius: 100px;
     border: var(--projDetails-button-color) 5px solid;
-    transition: background 0.2s ease;
+    transition: background 0.2s ease,
+                color 0.2s ease;
 }
 .back-top-button:hover, .back-top-button:active{
     background: var(--projDetails-button-color);
+    color: var(--white-text-color);
 }
 
 /***************************************/

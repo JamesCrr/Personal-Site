@@ -2,8 +2,8 @@ $(document).ready(function(){
   
   // Fade Options
   const appearOptions = {
-      threshold: 0.9,    // Only fade once 80% visible
-      rootMargin : "0px 0px 0% 0px"
+      threshold: 1.0,    // Only fade once 100% visible
+      rootMargin : "0px 0px -6% 0px"
    };
   const appearOnScroll = new IntersectionObserver
   (function(entries, appearOnScroll) {

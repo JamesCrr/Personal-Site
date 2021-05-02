@@ -8,8 +8,8 @@ body{
 }
 
 .page-footer{
-    background: var(--projDetails-button-color);
-    /* background: linear-gradient(180deg, var(--nav-bg-color), var(--footer-bg-color)); */
+    /* background: var(--projDetails-button-color); */
+    background: linear-gradient(180deg, var(--nav-bg-color), var(--footer-bg-color));
     padding: 2% 6%;
 }
 .footer-images{
